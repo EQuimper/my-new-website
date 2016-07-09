@@ -1,0 +1,9 @@
+$black: #23252a;
+$gold: #b9ac9c;
+@import "normalize";
+@import 'welcome';
+@import 'about';
+
+#main-body {
+  margin-top: -13.5px;
+}
