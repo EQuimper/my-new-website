@@ -1,0 +1,111 @@
+#welcome {
+  height: calc(100vh - 40px);
+  width: 100%;
+  background-image: url('/assets/images/bg-welcome-intro.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-color: $black;
+  background-blend-mode: multiply;
+  position: relative;;
+  background-attachment: fixed;
+}
+
+.welcome-content {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
+
+.heading {
+  color: #fff;
+}
+
+.heading-text {
+  font-size: 7em;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 1px 1px 1px $black;
+}
+
+.welcome-content2 {
+  height: 30%;
+  margin-top: 5%;
+  background-image: url('/assets/images/bg-welcome.jpg');
+  background-size: cover;
+  background-blend-mode: difference;;
+  background-color: $blue;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-sell {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  width: 55%;
+  align-items: center;
+  height: 90%;
+}
+
+.welcome-sell-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  width: 100%;
+  list-style: none;
+  justify-content: space-around;
+  text-align: center;
+  color: #fff;
+}
+
+.welcome-sell-list-item-link, .welcome-icon {
+  color: #fff;
+  transition: 1.2s ease;
+  text-shadow: 1px 1px 2px $black;
+  transition: 1s ease;
+  &:hover {
+    color: $black;
+    transform: scale(1.5);
+  }
+}
+
+// .welcome-icon {
+//   text-shadow: 1px 1px 2px $black;
+//   transition: 1s ease;
+//   &:hover {
+//     transform: scale(1.5);
+//   }
+// }
+
+#welcome2 {
+  height: calc(100vh + 30vh);
+  width: 100%;
+  // background-color: $black;
+}
+
+.welcome2-content {
+  height: 70%;
+  background-color: #fff;
+}
+
+.welcome2-footer {
+  height: 30%;
+  background-image: url('https://images.unsplash.com/reserve/6HJtLkJSDqjqlE2NipEu_macbook.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=44100217df531765e155549ce3e11a43');
+  background-size: cover;
+  background-position: center center;
+  background-color: $black;
+  background-blend-mode: multiply;
+}
