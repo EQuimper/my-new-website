@@ -47,4 +47,10 @@ export default function(){
     this.use('toLeft'),
     this.reverse('toRight')
   );
+  this.transition(
+    this.fromRoute('portfolio'),
+    this.toRoute('contact'),
+    this.use('toLeft'),
+    this.reverse('toRight')
+  );
 }
