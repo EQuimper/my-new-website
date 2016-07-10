@@ -17,8 +17,6 @@ export default Ember.Controller.extend({
 
   actions: {
     sendMessage() {
-      const toast = this.get('toast');
-
       const name = this.get('name');
       const email = this.get('emailAddress');
       const message = this.get('message');
@@ -27,7 +25,7 @@ export default Ember.Controller.extend({
       newContact.save().then((response, error) => {
         if (error) {
           toastr.error(error);
-        };
+        }
         toastr.success(`
           Thank you! I just received your message: ${name}
         `);
