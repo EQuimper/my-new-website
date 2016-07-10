@@ -12,6 +12,12 @@ export default function(){
     this.reverse('toRight')
   );
   this.transition(
+    this.fromRoute('portfolio'),
+    this.toRoute('services'),
+    this.use('toLeft'),
+    this.reverse('toRight')
+  );
+  this.transition(
     this.fromRoute('services'),
     this.toRoute('about'),
     this.use('toLeft'),
