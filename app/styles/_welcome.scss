@@ -33,7 +33,6 @@
 
 .welcome-content2 {
   height: 30%;
-  margin-top: 5%;
   background-image: url('/assets/images/bg-welcome.jpg');
   background-size: cover;
   background-blend-mode: difference;;
@@ -97,15 +96,17 @@
 }
 
 .welcome2-content {
-  height: 70%;
+  height: 65%;
   background-color: #fff;
 }
 
 .welcome2-footer {
-  height: 30%;
+  height: 35%;
   background-image: url('https://images.unsplash.com/reserve/6HJtLkJSDqjqlE2NipEu_macbook.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=44100217df531765e155549ce3e11a43');
   background-size: cover;
-  background-position: center center;
+  background-position: bottom bottom;
   background-color: $black;
-  background-blend-mode: multiply;
+  background-attachment: fixed;
+  position: relative;
+  background-blend-mode: exclusion;
 }
