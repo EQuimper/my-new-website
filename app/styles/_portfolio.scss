@@ -1,0 +1,128 @@
+#intro-portfolio {
+  height: 100vh;
+  width: 100%;
+  background-color: $black;
+}
+
+.projects {
+  max-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+}
+
+.projects-left {
+  background-color: #fff;
+  width: 40%;
+  height: 100vh;
+  border-bottom: 1px solid $black;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-content {
+  text-align: center;
+}
+
+.projects-title-box {
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 3.5em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+// .projects-description-box {
+//   text-align: right;
+// }
+
+.projects-tech-box {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.projects-tech-list {
+  list-style: none;
+  margin: 10px auto;
+}
+
+.projects-right {
+  background-color: #fff;
+  width: 60%;
+  height: 100vh;
+  border-bottom: 1px solid $black;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion {
+	width: 100%;
+  height: 450px;
+	overflow: hidden;
+
+	/*Time for some styling*/
+	// margin: 100px auto;
+	// box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	// -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	// -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+.accordion ul {
+	width: 2000px;
+}
+
+.accordion li {
+	position: relative;
+	display: block;
+	width: 160px;
+	float: left;
+
+	border-left: 1px solid #888;
+
+	// box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	// -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	// -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+
+	/*Transitions to give animation effect*/
+	transition: all 1.1s;
+	-webkit-transition: all 1.1s;
+	-moz-transition: all 1.1s;
+	/*If you hover on the images now you should be able to
+	see the basic accordian*/
+}
+
+/*Reduce with of un-hovered elements*/
+.accordion ul:hover li {width: 60px;}
+/*Lets apply hover effects now*/
+/*The LI hover style should override the UL hover style*/
+.accordion ul li:hover {width: 600px;}
+
+
+.accordion li img {
+	display: block;
+  // width: 100%;
+}

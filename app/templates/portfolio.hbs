@@ -1,1 +1,60 @@
-{{outlet}}
+<section id="intro-portfolio">
+  <div>
+    <h1>Showcase</h1>
+  </div>
+</section>
+
+{{#each model as |p|}}
+  <section class="projects">
+    <div class="projects-left">
+      <div class="projects-content">
+        <div class="projects-title-box">
+          <h1 class="projects-title">{{p.title}}</h1>
+        </div>
+        <br>
+        <div class="projects-description-box">
+          <p class="projects-description">
+            {{p.description}}
+          </p>
+        </div>
+        <br>
+        <div class="projects-tech-box">
+          <div>
+            <h3>Tehnologies Used:</h3>
+          </div>
+          <div>
+            <ul class="projects-tech-list">
+              {{#each p.technologies as |t|}}
+              <li class="ui basic label">
+                {{t}}
+              </li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+        <br>
+        <div class="ui massive animated black button" tabindex="0">
+          <div class="visible content">Full Project</div>
+          <div class="hidden content">
+            <i class="right arrow icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="projects-right">
+
+      <div class="accordion">
+        <ul>
+          {{#each p.images as |image|}}
+            <li>
+              <a href="#">
+                <img src={{image}} height="450" width="900" />
+              </a>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+
+    </div>
+  </section>
+{{/each}}
