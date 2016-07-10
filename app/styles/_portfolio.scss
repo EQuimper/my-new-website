@@ -1,7 +1,11 @@
 #intro-portfolio {
-  height: calc(100vh - 40px);
+  height: calc(100vh - 5em);
   width: 100%;
-  background-color: $black;
+  background-color: $blue;
+  background-image: url('/assets/images/bg-showcase.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: luminosity;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -9,12 +13,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position:relative;
+  position: relative;;
+  background-attachment: fixed;
 }
 
 .intro-portfolio-title {
   color: #fff;
   font-size: 9em;
   font-family: 'Pacifico', cursive;
+  text-shadow: 1px 1px 1px $black;
 }
 
 .projects {
@@ -148,3 +156,67 @@
   display: block;
   box-shadow: rgba(0, 0, 0, 0.188235) 0px 10px 30px, rgba(0, 0, 0, 0.227451) 0px 6px 10px;
 }
+
+// ARROW
+
+/* the wrapper element that will become the outer circle */
+.arrow-wrap {
+  position:absolute;
+  z-index:1;
+  left:50%;
+  top: 93%;
+  margin-left:-5em;
+  background:#111;
+  width:10em;
+  height:10em;
+  padding:4em 2em;
+  border-radius:50%;
+  font-size:0.5em;
+  display:block;
+  box-shadow:0px 0px 5px 0px #333;
+}
+
+/* a triangle to make the main part of the arrow. Adjust the border-color to fit your needs */
+.arrow-icon {
+  float:left;
+  position:relative;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #ffffff transparent transparent transparent;
+  -webkit-transform:rotate(360deg);/* added for better anti-aliasing on webkit browsers */
+}
+
+/* a pseudo element arrow placed on top of the other one with the same color as the wrapper */
+.arrow-icon:after {
+  content:'';
+  position:absolute;
+  top:-3.2em;
+  left:-3em;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #111 transparent transparent transparent;
+  -webkit-transform:rotate(360deg);/* added for better anti-aliasing on webkit browsers */
+}
+
+@-webkit-keyframes arrows {
+    0% { top:0; }
+    10% { top:12%; }
+    20% { top:0; }
+    30% { top:12%; }
+    40% { top:-12%; }
+    50% { top:12%; }
+    60% { top:0; }
+    70% { top:12%; }
+    80% { top:-12%; }
+    90% { top:12%; }
+    100% { top:0; }
+  }
+
+  .arrow-wrap .arrow-icon {
+    -webkit-animation: arrows 2.8s 0.4s;
+    -webkit-animation-delay: 1s;
+  }
