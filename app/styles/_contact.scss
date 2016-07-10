@@ -1,0 +1,85 @@
+#contact {
+  height: calc(100vh - 40px);
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.contact-content-box, .contact-form-box {
+  width: 50%;
+  height: 100vh;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.contact-content-box {
+  text-align: center;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: $black;
+}
+
+.contact-title {
+  font-size: 7em;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 1px 1px 1px $black;
+}
+
+.contact-form-box {
+  background-color: $blue;
+  background-image: url('/assets/images/bg-welcome.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: difference;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-contact {
+  width: 80%;
+}
+
+// Social Media
+
+.contact-social-media-box {
+  width: 80%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-social-media-list {
+  list-style: none;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-social-media-item {
+  transition: all 1s ease-in-out;
+  text-shadow: 1px 1px 1px $black;
+  color: $black;
+  &:hover {
+    transform: scale(1.2);
+    color: $blue;
+  }
+}
