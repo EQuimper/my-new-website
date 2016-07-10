@@ -56,6 +56,9 @@
         <label style="color: white">Message</label>
         {{textarea value=message placeholder="Message"}}
       </div>
+      {{#if didLoad}}
+      <button class="ui secondary loading button">Loading</button>
+      {{else}}
       <button
         {{action 'sendMessage'}}
         class="ui massive animated fade black button"
@@ -66,6 +69,7 @@
           <i class="mail forward icon"></i>
         </div>
       </button>
+      {{/if}}
     </form>
   </div>
 </section>

@@ -17,19 +17,24 @@ export default Ember.Controller.extend({
 
   actions: {
     sendMessage() {
-      var toast = this.get('toast');
+      const toast = this.get('toast');
 
-      var name = this.get('name');
-      var email = this.get('emailAddress');
-      var message = this.get('message')
+      const name = this.get('name');
+      const email = this.get('emailAddress');
+      const message = this.get('message');
 
-
-      toastr.success(`
-        Thank you! I just received your message: ${name}
-      `);
-      this.set('name', '');
-      this.set('emailAddress', '');
-      this.set('message', '');
+      const newContact = this.store.createRecord('contact', {name, email, message});
+      newContact.save().then((response, error) => {
+        if (error) {
+          toastr.error(error);
+        };
+        toastr.success(`
+          Thank you! I just received your message: ${name}
+        `);
+        this.set('name', '');
+        this.set('emailAddress', '');
+        this.set('message', '');
+      });
     }
   }
 });
