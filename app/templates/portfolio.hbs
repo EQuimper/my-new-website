@@ -48,6 +48,24 @@
         </div>
 
         <br>
+
+        <div class="projects-features-box">
+          <div>
+            <h3>Features:</h3>
+          </div>
+          <br>
+          <div class="projects-features-list-box">
+            <ol class="projects-features-list ui list">
+              {{#each p.features as |f|}}
+                <li value="*">
+                  {{f}}
+                </li>
+              {{/each}}
+            </ol>
+          </div>
+        </div>
+
+        <br>
         <br>
 
         <a href={{p.url}} class="ui massive animated black button" tabindex="0">

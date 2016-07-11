@@ -92,6 +92,28 @@
   margin: 10px auto;
 }
 
+.projects-features-list-box {
+  width: 60%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-features-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .projects-right {
   background-color: #fff;
   width: 60%;
