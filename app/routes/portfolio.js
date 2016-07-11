@@ -4,6 +4,7 @@ export default Ember.Route.extend({
   model() {
     let project = [
       {
+        'id': 1,
         'title': 'GameStreaming',
         'description': `GameStreaming is an application built with the Twitch's Api`,
         'features': [
@@ -27,6 +28,7 @@ export default Ember.Route.extend({
         ]
       },
       {
+        'id': 2,
         'title': 'Waitstaff Calculator',
         'description': 'This is a app for help waitstaff to calculate their amount of tips.',
         'features': [
@@ -44,6 +46,7 @@ export default Ember.Route.extend({
         ]
       },
       {
+        'id': 3,
         'title': 'Simpletify',
         'description': `Simpletify is a little app build with the Spotify's Api. Was built while learning jQuery`,
         'features': [

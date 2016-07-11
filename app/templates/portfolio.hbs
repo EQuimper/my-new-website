@@ -2,7 +2,7 @@
   <div class="intro-portfolio-content">
     <h1 class="intro-portfolio-title">Showcase</h1>
   </div>
-  {{#scroll-to href='.projects' duration=1000 easing='linear' offset=0}}
+  {{#scroll-to href='.projects.1' duration=1000 easing='linear' offset=0}}
     <a class="arrow-wrap">
       <span class="arrow-icon"></span>
     </a>
@@ -11,7 +11,7 @@
 
 {{#each model as |p|}}
 
-  <section class="projects">
+  <section class="projects {{p.id}}">
 
     <div class="projects-left">
 
@@ -80,9 +80,11 @@
 
     </div>
   </section>
-  {{#if (not-eq p.title "Simpletify")}}
+  {{#if (not-eq p.id 3)}}
     <div class="ui horizontal divider portfolio-divider">
-      <i class="arrow circle down icon" style="font-size: 3rem"/>
+      {{#scroll-to href=(concat '.projects.' (addOneId p.id)) duration=1000 easing='linear' offset=0}}
+        <i class="chevron down icon portfolio-chevron" style="font-size: 3rem"/>
+      {{/scroll-to}}
     </div>
   {{/if}}
 {{/each}}
