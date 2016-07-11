@@ -10,7 +10,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "heroku" "git push && git push heroku master"
   },
   "repository": "",
   "engines": {
