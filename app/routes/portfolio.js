@@ -5,7 +5,7 @@ export default Ember.Route.extend({
     let project = [
       {
         'title': 'GameStreaming',
-        'description': `GameStreaming is a application build with the Twitch's Api`,
+        'description': `GameStreaming is an application built with the Twitch's Api`,
         'features': [
           'Follow a games',
           'Follow a streamer',
@@ -27,8 +27,25 @@ export default Ember.Route.extend({
         ]
       },
       {
+        'title': 'Waitstaff Calculator',
+        'description': 'This is a app for help waitstaff to calculate their amount of tips.',
+        'features': [
+          'Help calculate the total of a bills',
+          'Can see the total of all tips'
+        ],
+        'images': [
+          '/assets/images/waitstaff-image2.png',
+          '/assets/images/waitstaff-image1.png'
+        ],
+        'url': 'http://equimper.github.io/thinkful-WaitStaff/',
+        'technologies': [
+          'Angular',
+          'Material-Ui'
+        ]
+      },
+      {
         'title': 'Simpletify',
-        'description': `Simpletify is a little app build with the Spotify's Api. Was build for learning jQuery`,
+        'description': `Simpletify is a little app build with the Spotify's Api. Was built while learning jQuery`,
         'features': [
           'Fetch a 30s music previews',
           'Search a artist',

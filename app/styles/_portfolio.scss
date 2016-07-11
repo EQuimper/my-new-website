@@ -41,7 +41,7 @@
   background-color: #fff;
   width: 40%;
   height: 100vh;
-  border-bottom: 2px solid $black;
+  // border-bottom: 2px solid $black;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -96,7 +96,7 @@
   background-color: #fff;
   width: 60%;
   height: 100vh;
-  border-bottom: 2px solid $black;
+  // border-bottom: 2px solid $black;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -104,6 +104,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.portfolio-divider {
+  margin-top: -28px !important;
 }
 
 .accordion {
