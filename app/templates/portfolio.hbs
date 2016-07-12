@@ -68,12 +68,20 @@
         <br>
         <br>
 
-        <a href={{p.url}} class="ui massive animated black button" tabindex="0">
+        {{!-- Button for go to the website --}}
+        <a
+          href={{p.url}}
+          class="ui massive animated black button"
+          tabindex="0"
+          target="_blank"
+        >
           <div class="visible content">Full Project</div>
           <div class="hidden content white">
             <i class="right arrow icon"></i>
           </div>
         </a>
+
+        {{!-- END --}}
 
       </div>
 
@@ -106,3 +114,7 @@
     </div>
   {{/if}}
 {{/each}}
+
+{{#scroll-to href="#intro-portfolio" class="back-to-top"}}
+  <i class="icon arrow circle outline up" />
+{{/scroll-to}}

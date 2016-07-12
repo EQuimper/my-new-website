@@ -1,13 +1,14 @@
 #welcome {
   height: calc(100vh - 40px);
   width: 100%;
-  background-image: url('/assets/images/bg-welcome-intro.jpg');
   background-size: cover;
-  background-position: center center;
+  background-image: url('/assets/images/bg-welcome-intro.jpg');
+  background-position: top center;
   background-color: $black;
-  background-blend-mode: multiply;
-  position: relative;;
+  background-blend-mode: luminosity;
+  position: relative;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 .welcome-content {
@@ -19,6 +20,7 @@
   justify-content: center;
   align-items: center;
   height: 70%;
+  border-top: 2px solid $black;
 }
 
 .heading {
@@ -28,7 +30,11 @@
 .heading-text {
   font-size: 7em;
   font-family: 'Pacifico', cursive;
-  text-shadow: 1px 1px 1px $black;
+  text-shadow: 0 -3px 0 #333,
+    0 6px 8px rgba(0,0,0,.4),
+    0 9px 10px rgba(0,0,0,.15),
+    0 30px 10px rgba(0,0,0,.18),
+    0 15px 10px rgba(0,0,0,.21);
 }
 
 .welcome-content2 {

@@ -4,8 +4,9 @@
 
 - [ ] Home page
 - [ ] Sevices page
-- [ ] Showcase page
+- [x] Showcase page
 - [x] About page
+- [x] Contact page
 
 
 ## Link

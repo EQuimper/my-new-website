@@ -1,37 +1,31 @@
 export default function(){
   this.transition(
     this.fromRoute('index'),
-    this.toRoute('about'),
-    this.use('toLeft'),
-    this.reverse('toRight')
-  );
-  this.transition(
-    this.fromRoute('index'),
-    this.toRoute('services'),
-    this.use('toLeft'),
-    this.reverse('toRight')
-  );
-  this.transition(
-    this.fromRoute('portfolio'),
-    this.toRoute('services'),
-    this.use('toLeft'),
-    this.reverse('toRight')
-  );
-  this.transition(
-    this.fromRoute('services'),
-    this.toRoute('about'),
-    this.use('toLeft'),
-    this.reverse('toRight')
-  );
-  this.transition(
-    this.fromRoute('index'),
     this.toRoute('portfolio'),
     this.use('toLeft'),
     this.reverse('toRight')
   );
   this.transition(
     this.fromRoute('index'),
+    this.toRoute('services'),
+    this.use('toLeft'),
+    this.reverse('toRight')
+  );
+  this.transition(
+    this.fromRoute('index'),
+    this.toRoute('about'),
+    this.use('toLeft'),
+    this.reverse('toRight')
+  );
+  this.transition(
+    this.fromRoute('index'),
     this.toRoute('contact'),
+    this.use('toLeft'),
+    this.reverse('toRight')
+  );
+  this.transition(
+    this.fromRoute('portfolio'),
+    this.toRoute('services'),
     this.use('toLeft'),
     this.reverse('toRight')
   );
@@ -42,13 +36,20 @@ export default function(){
     this.reverse('toRight')
   ),
   this.transition(
-    this.fromRoute('about'),
+    this.fromRoute('portfolio'),
     this.toRoute('contact'),
     this.use('toLeft'),
     this.reverse('toRight')
   );
   this.transition(
-    this.fromRoute('portfolio'),
+    this.fromRoute('services'),
+    this.toRoute('about'),
+    this.use('toLeft'),
+    this.reverse('toRight')
+  );
+
+  this.transition(
+    this.fromRoute('about'),
     this.toRoute('contact'),
     this.use('toLeft'),
     this.reverse('toRight')

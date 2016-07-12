@@ -242,9 +242,36 @@
     80% { top:-12%; }
     90% { top:12%; }
     100% { top:0; }
-  }
+}
 
-  .arrow-wrap .arrow-icon {
-    -webkit-animation: arrows 2.8s 0.4s;
-    -webkit-animation-delay: 1s;
+.arrow-wrap .arrow-icon {
+  -webkit-animation: arrows 2.8s 0.4s;
+  -webkit-animation-delay: 1s;
+}
+
+// Back to top
+
+.back-to-top {
+  background: none;
+  margin: 0;
+  position: fixed;
+  display: inline;
+  bottom: 0;
+  right: 30px;
+  width: 70px;
+  height: 70px;
+  z-index: 100;
+  color: $blue;
+  transition: 1s ease;
+
+  &:hover {
+    color: $black;
   }
+}
+
+
+
+.back-to-top i {
+  font-size: 60px;
+  text-shadow: 1px 1px 1px $black;
+}

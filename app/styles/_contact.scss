@@ -1,3 +1,4 @@
+// Master Page
 #contact {
   height: calc(100vh - 40px);
   width: 100%;
@@ -11,6 +12,7 @@
   flex-direction: row;
 }
 
+// Separate in 2 side
 .contact-content-box, .contact-form-box {
   width: 50%;
   height: 100vh;
@@ -21,6 +23,7 @@
   display: flex;
 }
 
+// Left side
 .contact-content-box {
   text-align: center;
   background-color: #fff;
@@ -30,12 +33,14 @@
   color: $black;
 }
 
+// Left side title
 .contact-title {
   font-size: 7em;
   font-family: 'Pacifico', cursive;
   text-shadow: 1px 1px 1px $black;
 }
 
+// Right side
 .contact-form-box {
   background-color: $blue;
   background-image: url('/assets/images/bg-welcome.jpg');
@@ -46,6 +51,7 @@
   align-items: center;
 }
 
+// Contact-form
 .form-contact {
   width: 80%;
 }
@@ -63,6 +69,7 @@
   align-items: center;
 }
 
+// List of social media
 .contact-social-media-list {
   list-style: none;
   display: -webkit-flex;
@@ -72,14 +79,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  // Each item box
+  li {
+    height: 85px;
+    width: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 0 9px;
+    transition: all 0.8s ease-in-out;
+
+    // Hover for circle
+    &:hover {
+      transform: rotate(360deg);
+      border-radius: 100px;
+      background-color: $blue;
+      box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    }
+  }
 }
 
+// Each item
 .contact-social-media-item {
   transition: all 0.8s ease-in-out;
   text-shadow: 1px 1px 1px $black;
   color: $black;
   &:hover {
-    transform: scale(1.2);
-    color: $blue;
+    color: #fff;
   }
 }
