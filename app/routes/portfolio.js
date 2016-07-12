@@ -20,6 +20,7 @@ export default Ember.Route.extend({
           '/assets/images/gamestreaming-image1.png',
         ],
         'url': 'http://equimper.github.io/streamingAppRedux/',
+        'source': 'https://github.com/EQuimper/streamingAppRedux',
         'technologies': [
           'React',
           'Redux',
@@ -40,6 +41,7 @@ export default Ember.Route.extend({
           '/assets/images/waitstaff-image1.png'
         ],
         'url': 'http://equimper.github.io/thinkful-WaitStaff/',
+        'source': 'https://github.com/EQuimper/thinkful-WaitStaff',
         'technologies': [
           'Angular',
           'Material-Ui'
@@ -60,6 +62,7 @@ export default Ember.Route.extend({
           '/assets/images/simpletify-image2.png'
         ],
         'url': 'http://equimper.github.io/thinkful-Simpletify/',
+        'source': 'https://github.com/EQuimper/thinkful-simpletify',
         'technologies': [
           'jQuery',
           'Bootstrap'

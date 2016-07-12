@@ -3,9 +3,9 @@
     <h1 class="intro-portfolio-title">Showcase</h1>
   </div>
   {{#scroll-to href='.projects.1' duration=1000 easing='linear' offset=0}}
-    <a class="arrow-wrap">
-      <span class="arrow-icon"></span>
-    </a>
+    <div class="arrow-wrap">
+      <i class="chevron down medium icon arrow-icon"></i>
+    </div>
   {{/scroll-to}}
 </section>
 
@@ -75,13 +75,25 @@
           tabindex="0"
           target="_blank"
         >
-          <div class="visible content">Full Project</div>
+          <div class="visible content">Demo</div>
           <div class="hidden content white">
             <i class="right arrow icon"></i>
           </div>
         </a>
 
         {{!-- END --}}
+
+        <a
+          href={{p.source}}
+          class="ui massive animated black button"
+          tabindex="0"
+          target="_blank"
+        >
+          <div class="visible content">Source</div>
+          <div class="hidden content white">
+            <i class="right arrow icon"></i>
+          </div>
+        </a>
 
       </div>
 
